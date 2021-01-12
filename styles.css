@@ -1,0 +1,249 @@
+body{
+  font-family: 'Inter', sans-serif;
+  Font-size: 14px;
+}
+
+.intro{
+  border-bottom: 1px hsl(225, 100%, 98%) solid;
+  margin-bottom: 1em;
+  padding: 1em .5em;
+}
+.header-intro{
+  margin-bottom: .25em;
+  font-size:1.2rem
+}
+
+.username{
+  margin-left:.5em;
+}
+.followers{
+  margin-top: 0em;
+  color: hsl(228, 12%, 44%);
+  font-weight:700;
+}
+.dark-label{
+  color: hsl(228, 12%, 44%);
+  font-weight:700;
+}
+.intro {
+  border-bottom: 2px grey solid;
+}
+
+.dark-switch{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.follower-cards{
+  display: flex;
+  flex-direction: column;
+}
+.positive{
+  color: hsl(163, 72%, 41%);
+  font-weight: 700;
+}
+.negative{
+  color: hsl(356, 69%, 56%)
+}
+.follower-card{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 320px;
+    margin: 1em auto;
+    padding: 1em;
+    background-color:hsl(227, 47%, 96%);
+}
+.arrow{
+  width:10px;
+}
+.social{
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-card{
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, hsl(329, 70%, 58%), hsl(37, 97%, 70%));
+}
+
+.social-icon{
+  max-width: 20px;
+  object-fit: contain;
+}
+
+.follower-amount{
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0em;
+  margin-top: .5em;
+}
+
+.follower-label{
+  font-weight: 400;
+  margin-top: .25em;
+  font-size: .8rem;
+  letter-spacing: 5px;
+  color:hsl(228, 12%, 44%);
+}
+
+.overview-title{
+  font-size: 1.2rem;
+}
+
+.all-stat-cards{
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card{
+  width: 320px;
+  height: 125px;
+  padding:.5em;
+  background-color: hsl(227, 47%, 96%);
+  margin: 1em auto;
+}
+
+.stat-card-header{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  color:hsl(228, 12%, 44%);
+  font-weight: 700;
+}
+
+.stat-numbers{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+}
+
+.stat-number{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top:1em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.very-dark-background{ 
+  background-color:  hsl(230, 17%, 14%)
+}
+
+.dark-card-background{
+  background-color:  hsl(228, 28%, 20%)
+}
+
+.desaturated-text{
+  color: hsl(228, 34%, 66%)
+}
+.white-text{
+  color: white;
+}
+@media screen and (min-width: 1100px) {
+body{
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 100%;
+  margin: 0em 1.75em
+}
+  .header-intro{
+    margin-bottom: .25em;
+    font-size:1.2rem
+  }
+  .intro{
+    border:none;
+  }
+  .dark-switch{
+    width: 150px;
+    margin: 0;
+  }
+
+  .all-stat-cards{
+    display: flex;
+    flex-flow :row wrap;
+    margin: 0 auto;
+  }
+  .follower-cards{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .follower-card{
+    width: 250px;
+  }
+  .stat-card{
+    width: 275px;
+  }
+
+  .overview-title{
+    margin: 0em 1.5em;
+    color: hsl(228, 34%, 66%);
+  }
+}

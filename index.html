@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+<title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body>
+
+  <div class="header">
+    <div class="intro">
+      <h1 class="header-intro text">Social Media Dashboard</h1>
+      <p class="followers"> Total Followers: 23,004</p>
+    </div>
+    <div class="dark-switch">
+      <p class="dark-label">Dark Mode</p>
+      <label class="switch">
+        <input  class="check" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+  </div>
+
+  <div class="follower-cards">
+    <div style="border-top: 5px hsl(208, 92%, 53%) solid" class="follower-card">
+      <div class="social">
+        <img src="./images/icon-facebook.svg" alt="" class="social-icon">
+        <p class="username">@nathanf</p>
+      </div>
+      <p class="follower-amount">1987</p>
+      <p class="follower-label">Followers</p>
+      
+      <p class="follower-change positive"><img src="./images/icon-up.svg" alt="" class="arrow arrow-up"> 12 Today</p>
+    </div>
+    <div style="border-top: 5px hsl(203, 89%, 53%) solid" class="follower-card">
+      <div class="social">
+        <img src="./images/icon-twitter.svg" alt="" class="social-icon">
+        <p class="username">@nathanf</p>
+      </div>
+      <p class="follower-amount">1044</p>
+      <p class="follower-label">Followers</p>
+      <p class="follower-change positive"><img src="./images/icon-up.svg" alt="" class="arrow arrow-up"> 99 Today</p>
+    </div>
+    <div  class="instagram-card follower-card">
+      <div class="social">
+        <img src="./images/icon-instagram.svg" alt="" class="social-icon">
+        <p class="username"> @realnathanf</p>
+      </div>
+      <p class="follower-amount"> 11k</p>
+      <p class="follower-label">Followers</p>
+      <p class="follower-change positive"><img src="./images/icon-up.svg" alt="" class="arrow arrow-up"> 1099 Today</p>
+    </div>
+    <div style="border-top: 5px hsl(348, 97%, 39%) solid" class="follower-card">
+      <div class="social">
+        <img src="./images/icon-youtube.svg" alt="" class="social-icon">
+        <p class="username">Nathan F.</p>
+      </div>
+      <p class="follower-amount">8239</p>
+      <p class="follower-label">Subscribers</p>
+      <p class="follower-change negative"><img src="./images/icon-down.svg" alt="" class="arrow arrow-down"> 144 Today</p>
+    </div>
+  </div>
+
+  <h2 class="overview-title text">Overview - Today</h2>
+
+  <div class="all-stat-cards">
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <p class="stat-label">Page Views</p>
+        <img src="./images/icon-facebook.svg" alt="" class="social-icon">
+      </div>
+      <div class="stat-numbers">
+        <p class="stat-number">87</p>
+        <p class="stat-changes positive"><img src="./images/icon-up.svg" alt="" class="arrow arrow-up"> 3%</p>
+      </div>
+      
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <p class="stat-label">Likes</p>
+        <img src="./images/icon-facebook.svg" alt="" class="social-icon">
+      </div>
+      <div class="stat-numbers">
+        <p class="stat-number">52</p>
+        <p class="stat-changes negative"><img src="./images/icon-down.svg" alt="" class="arrow arrow-down"> 2%</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <p class="stat-label">Likes</p>
+        <img src="./images/icon-instagram.svg" alt="" class="social-icon">
+      </div>
+      <div class="stat-numbers">
+        <p class="stat-number">5462</p>
+        <p class="stat-changes positive"><img src="./images/icon-up.svg" alt="" class="arrow arrow-up"> 2257%</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <p class="stat-label">Profile Views</p>
+        <img src="./images/icon-instagram.svg" alt="" class="social-icon">
+      </div>
+      <div class="stat-numbers">
+        <p class="stat-number">52k</p>
+        <p class="stat-changes positive"><img src="./images/icon-up.svg" alt="" class="arrow arrow-up"> 1375%</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <p class="stat-label">Retweets</p>
+        <img src="./images/icon-twitter.svg" alt="" class="social-icon">
+      </div>
+      <div class="stat-numbers">
+        <p class="stat-number">117</p>
+        <p class="stat-changes positive"><img src="./images/icon-up.svg" alt="" class="arrow arrow-up"> 303%</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <p class="stat-label">Likes</p>
+        <img src="./images/icon-twitter.svg" alt="" class="social-icon">
+      </div>
+      <div class="stat-numbers">
+        <p class="stat-number">507</p>
+        <p class="stat-changes positive"><img src="./images/icon-up.svg" alt="" class="arrow arrow-up"> 553%</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <p class="stat-label">Likes</p>
+        <img src="./images/icon-youtube.svg" alt="" class="social-icon">
+      </div>
+      <div class="stat-numbers">
+        <p class="stat-number">107</p>
+        <p class="stat-changes negative"><img src="./images/icon-down.svg" alt="" class="arrow arrow-down"> 19%</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <p class="stat-label">Total Views</p>
+        <img src="./images/icon-youtube.svg" alt="" class="social-icon">
+      </div>
+      <div class="stat-numbers">
+        <p class="stat-number">1407</p>
+        <p class="stat-changes negative"><img src="./images/icon-down.svg" alt="" class="arrow arrow-down"> 12%</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./switch.js"></script>
+</html>
